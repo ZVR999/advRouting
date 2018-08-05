@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>What's your name??</h1>
+    <p>{{ name }}. Jeezzzz, calm down.</p>
+    <form action="/server" method="POST">
+        First Name:
+        <input type="text" name="first_name">
+        Last Name:
+        <input type="text" name="last_name">
+        <input type="submit" value="Submit!">
+    </form>
+    {% for x in range(0,10) %}
+    <p>{{ name }}</p>
+    {% endfor %}
+</body>
+</html>
